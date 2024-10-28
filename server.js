@@ -8,7 +8,7 @@ const Customer = require('./model/customer')
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: "https://lic-frontend.vercel.app"
+    origin: ["https://lic-frontend.vercel.app", "http://localhost:3000"]
 }));
 
 
